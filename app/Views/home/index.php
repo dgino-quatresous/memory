@@ -11,9 +11,9 @@
   <?= htmlspecialchars($title ?? 'Accueil', ENT_QUOTES, 'UTF-8') ?>
 </h1>
 
-<p>Bienvenue dans le projet mini-MVC.</p>
+<p>Bienvenue dans le projet Memory.</p>
 
 <!-- Exemple d'amélioration : proposer un lien vers la liste des articles -->
 <p>
-  <a href="/articles">Voir la liste des articles</a>
+  <a href="/articles">Placeholder</a>
 </p>

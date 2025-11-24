@@ -32,15 +32,7 @@ Ton objectif : comprendre la séparation entre **modèle (données)**, **vue (HT
 
 ## 🏗 À faire (exercices)
 
-- [ ] Ajouter une page `/about` avec un nouveau contrôleur et une vue.  
-- [ ] Compléter le contrôleur Article avec une action `show($id)` qui affiche un article en détail.  
-- [ ] Créer un formulaire pour ajouter un article (**Create**).  
-- [ ] Implémenter la suppression d’un article (**Delete**).  
-- [ ] Bonus : créer un layout plus joli (HTML + CSS).  
-
----
-
-## ✅ Critères d’évaluation
+ 
 
 - [ ] Le projet fonctionne (pages accessibles).  
 - [ ] Respect du pattern MVC (pas de SQL dans les vues, pas de HTML dans les modèles).  

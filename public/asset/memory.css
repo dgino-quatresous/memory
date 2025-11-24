@@ -1,0 +1,11 @@
+/* Styles minimaux pour le Memory */
+body { font-family: Arial, sans-serif; padding: 16px; }
+#memory-board { display: grid; gap: 8px; margin-top: 12px; }
+.card { width: 80px; height: 100px; background: #2c3e50; color: #fff; display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:6px; font-size:28px }
+.card.flipped { background: #ecf0f1; color: #2c3e50 }
+.card.matched { visibility: hidden; }
+#game-info > span { margin-right: 12px }
+
+@media (min-width: 600px) {
+  #memory-board { grid-template-columns: repeat(6, 1fr); }
+}

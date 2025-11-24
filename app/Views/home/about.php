@@ -1,1 +1,5 @@
-<h1><?= htmlspecialchars($title ?? 'About', ENT_QUOTES, 'UTF-8') ?></h1>
+<?php
+// La page /about a été supprimée — redirection vers l'accueil
+header('Location: /');
+exit;
+?>

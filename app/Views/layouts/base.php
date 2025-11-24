@@ -25,7 +25,9 @@
   <!-- Menu de navigation global -->
   <nav>
     <a href="/">Accueil</a> | 
-    <a href="/articles">Articles</a>
+    <a href="/articles">Connexion</a> | 
+    <a href="/game">Memory</a> | 
+    <a href="/game/leaderboard">Classement</a>
   </nav>
 
   <!-- Contenu principal injecté depuis BaseController -->
