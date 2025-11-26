@@ -29,6 +29,7 @@
   function updateMoves() { document.getElementById('moves').textContent = moves; }
 
   function cardClick(e) {
+    
     const el = e.currentTarget;
     if (el.classList.contains('flipped') || el.classList.contains('matched')) return;
     if (!interval) startTimer();
@@ -69,10 +70,10 @@
   function finishGame() {
     stopTimer();
     // envoyer score au serveur via redirection GET (simple)
-    const player = encodeURIComponent(window.PLAYER || 'Guest');
+    const player = document.getElementById('player-name').textContent || 'Guest';
     const url = `/game/save?player=${player}&pairs=${pairs}&time=${timer}&moves=${moves}`;
     // slight delay to let animation finish
-    setTimeout(() => { window.location.href = url; }, 700);
+   setTimeout(() => { window.location.href = url; }, 700);
   }
 
   // create cards

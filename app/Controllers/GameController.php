@@ -58,7 +58,6 @@ class GameController extends BaseController
 
         $playerId = $playerModel->createIfNotExists($player);
         $scoreModel->save($playerId, $pairs, $time, $moves);
-
         // Après sauvegarde, on redirige vers le profil du joueur
         header('Location: /game/profile?id=' . $playerId);
         exit;
