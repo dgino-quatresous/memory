@@ -34,6 +34,8 @@
     if (!interval) startTimer();
 
     el.classList.add('flipped');
+    // reveal the card's value (emoji or symbol)
+    el.textContent = el.dataset.value;
     const val = el.dataset.value;
     if (!first) {
       first = el; return;
@@ -56,6 +58,9 @@
       setTimeout(() => {
         first.classList.remove('flipped');
         second.classList.remove('flipped');
+        // hide values again
+        first.textContent = '';
+        second.textContent = '';
         first = null; second = null;
       }, 700);
     }

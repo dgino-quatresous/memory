@@ -19,8 +19,11 @@ class GameController extends BaseController
 
         $playerName = trim((string)($_GET['player'] ?? 'Guest')) ?: 'Guest';
 
-        // Génération des valeurs de cartes (lettres A..L)
-        $symbols = range('A', 'L');
+        // Génération des valeurs de cartes : utiliser des émojis uniques par paire
+        $symbols = [
+            '🐶','🐱','🐭','🐹','🐰','🦊','🐻','🐼','🐨','🐯','🦁','🐮',
+            '🐷','🐸','🐵','🐔','🐧','🦄','🐢','🐙','🦋','🌼','🍎','🍓'
+        ];
         shuffle($symbols);
         $selected = array_slice($symbols, 0, $pairs);
 
